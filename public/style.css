@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.area-button {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin: 10px;
+}
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#loginPage {
+    display: flex;
+}
+
+#chatPage {
+    display: none;
+}
+.chatArea {
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+
+.chatInput {
+    width: 100%;
+    display: flex;
+}
+#chatTextInput {
+    flex: 1;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+    border: 0;
+}
+.chatList {
+    flex: 1;
+    background-color: #000;
+    color: #08cf12;
+    overflow-x: scroll;
+    max-height: calc(100vh - 40px);
+}
+.chatList li {
+    padding: 3px;
+    font-size: 15px;
+    font-style: italic;
+}
+.chatList .m-status {
+    color: #f20c0c;
+}
+.chatList li.m-txt span {
+    font-weight: bold;
+    color: aqua;
+}
+.userList {
+    color: #fff;
+    width: 0px;
+    background-color: #232222;
+    overflow-y: scroll;
+    max-height: calc(100vh - 40px);
+    transition: .3s;
+}
+.userList li {
+    padding: 5px;
+}
+.menu-opened {
+    width: 100px;
+}
