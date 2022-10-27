@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "engines": {
-     "node": "15.x"
+    "node": "15.x"
   },
   "scripts": {
-    "start": "node dist/server.js",
-    "postinstall": "",
+    "start": "node server.js",
+    "postinstall": "tsc && copyfiles -u 1 public/**/*.js /dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,5 +16,8 @@
   "dependencies": {
     "express": "^4.18.2",
     "socket.io": "^4.5.3"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }
