@@ -62,11 +62,11 @@ ul, li {
     font-style: italic;
 }
 .chatList .m-status {
-    color: #f20c0c;
+    color: #424242;
 }
 .chatList li.m-txt span {
     font-weight: bold;
-    color: aqua;
+    color: rgb(0, 26, 255);
 }
 .userList {
     color: #fff;

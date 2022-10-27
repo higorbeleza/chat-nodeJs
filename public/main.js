@@ -24,7 +24,7 @@ function addMessage(type, user, msg) {
             ul.innerHTML += '<li class="m-status"> '+msg+' </li>'
         break;
         case 'msg':
-            ul.innerHTML += '<li class="m-txt"><span> '+user+'</span > '+msg+'</li>'
+            ul.innerHTML += '<li class="m-txt"><span> '+user+'</span >   '+msg+'</li>'
         break;
     }
 }
